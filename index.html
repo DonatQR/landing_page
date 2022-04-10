@@ -8,7 +8,7 @@
         <title>DonatQR</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
@@ -30,6 +30,9 @@
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About us</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#why">Why?</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#cta">Join us</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,53 +95,111 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
                         <div class="container-fluid px-5">
-                            <div class="row gx-5">
-                                <div class="col-md-6 mb-5">
-                                    <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
-                                        <div class="card-body">
-                                            <!-- Feature item-->
-                                            <div class="text-center">
-                                                <i class="bi-phone icon-feature d-block mb-3" style="color: #0475C9;"></i>
-                                                <h3 class="font-alt">Up to date inventory</h3>
-                                                <p class="text-muted mb-0">You are in control, add your needs live.</p>
+                            <div class="tab-content" id="myTabContent">
+                                <div id="organisation" class="tab-pane fade show active" role="tabpanel" aria-labelledby="organisation-tab">
+                                    <div class="row gx-5">
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
+                                                <div class="card-body">
+                                                    <!-- Feature item-->
+                                                    <div class="text-center">
+                                                        <i class="bi-archive icon-feature d-block mb-3" style="color: #0475C9;"></i>
+                                                        <h3 class="font-alt">Up to date inventory</h3>
+                                                        <p class="text-muted mb-0">You are in control, add your needs live.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
+                                                <div class="card-body">
+                                                    <!-- Feature item-->
+                                                    <div class="text-center">
+                                                        <i class="bi-globe icon-feature d-block mb-3" style="color: #0475C9;"></i>
+                                                        <h3 class="font-alt">Accessible worldwide</h3>
+                                                        <p class="text-muted mb-0">Reach new donors in one place.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row gx-5">
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
+                                                <div class="card-body">
+                                                    <!-- Feature item-->
+                                                    <div class="text-center">
+                                                        <i class="bi-geo-alt icon-feature d-block mb-3" style="color: #0475C9;"></i>
+                                                        <h3 class="font-alt">Localised on demand</h3>
+                                                        <p class="text-muted mb-0">Ensure donors know where to drop off goods.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
+                                                <div class="card-body">
+                                                    <!-- Feature item-->
+                                                    <div class="text-center">
+                                                        <i class="bi-exclamation-circle icon-feature d-block mb-3" style="color: #0475C9;"></i>
+                                                        <h3 class="font-alt">More efficient impact</h3>
+                                                        <p class="text-muted mb-0">No more wasted and unwanted donations.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-5">
-                                    <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
-                                        <div class="card-body">
-                                            <!-- Feature item-->
-                                            <div class="text-center">
-                                                <i class="bi-phone icon-feature d-block mb-3" style="color: #0475C9;"></i>
-                                                <h3 class="font-alt">Accessible worldwide</h3>
-                                                <p class="text-muted mb-0">Reach new donors in one place.</p>
+                                <div id="donor" class="tab-pane fade" role="tabpanel" aria-labelledby="donor-tab">
+                                    <div class="row gx-5">
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
+                                                <div class="card-body">
+                                                    <!-- Feature item-->
+                                                    <div class="text-center">
+                                                        <i class="bi bi-qr-code-scan icon-feature d-block mb-3" style="color: #0475C9;"></i>
+                                                        <h3 class="font-alt">Scan QR code</h3>
+                                                        <p class="text-muted mb-0">You are in control, add your needs live.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
+                                                <div class="card-body">
+                                                    <!-- Feature item-->
+                                                    <div class="text-center">
+                                                        <i class="bi-person-plus icon-feature d-block mb-3" style="color: #0475C9;"></i>
+                                                        <h3 class="font-alt">Join a cause</h3>
+                                                        <p class="text-muted mb-0">Donate everyone in a need.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row gx-5">
-                                <div class="col-md-6 mb-5">
-                                    <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
-                                        <div class="card-body">
-                                            <!-- Feature item-->
-                                            <div class="text-center">
-                                                <i class="bi-phone icon-feature d-block mb-3" style="color: #0475C9;"></i>
-                                                <h3 class="font-alt">Localised on demand</h3>
-                                                <p class="text-muted mb-0">Ensure donors know where to drop off goods.</p>
+                                    <div class="row gx-5">
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
+                                                <div class="card-body">
+                                                    <!-- Feature item-->
+                                                    <div class="text-center">
+                                                        <i class="bi-clock icon-feature d-block mb-3" style="color: #0475C9;"></i>
+                                                        <h3 class="font-alt">Donate immediately</h3>
+                                                        <p class="text-muted mb-0">Donate in real time.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-5">
-                                    <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
-                                        <div class="card-body">
-                                            <!-- Feature item-->
-                                            <div class="text-center">
-                                                <i class="bi-phone icon-feature d-block mb-3" style="color: #0475C9;"></i>
-                                                <h3 class="font-alt">More efficient impact</h3>
-                                                <p class="text-muted mb-0">No more wasted and unwanted donations.</p>
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card shadow" style="transition: ease-in 1s ease-out 1s;">
+                                                <div class="card-body">
+                                                    <!-- Feature item-->
+                                                    <div class="text-center">
+                                                        <i class="bi-people icon-feature d-block mb-3" style="color: #0475C9;"></i>
+                                                        <h3 class="font-alt">Build trust</h3>
+                                                        <p class="text-muted mb-0">Get notified about status of donation.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +209,7 @@
                     </div>
                     <div class="col-lg-4 order-lg-0">
                         <!-- Features section device mockup-->
-                        <div class="features-device-mockup">
+                        <div class="features-device-mockup d-none d-lg-block">
                             <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="50" cy="50" r="50" style="fill: #0475C9;"/>
                             </svg>
@@ -173,16 +234,25 @@
                         </div>
                     </div>
                 </div>
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-auto">
+                        <ul class="nav nav-pills mt-5 border shadow-sm p-1 rounded" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#organisation" type="button" role="tab" aria-controls="organisation" aria-selected="true">Organisation</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#donor" type="button" role="tab" aria-controls="donor" aria-selected="false">Donor</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Basic features section-->
         <section class="bg-light" id="about">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
-                    </div>
-                    <div class="col-12 col-lg-5">
+                    <div class="col-12 col-lg-5 order-lg-1">
                         <h2 class="display-4 lh-1 mb-4">About us</h2>
                         <div class="about-us">
                             <p class="fs-6 fw-normal text-muted mb-5 mb-lg-0">
@@ -190,11 +260,14 @@
                             </p>
                         </div>
                     </div>
+                    <div class="col-sm-8 col-md-6 order-lg-0">
+                        <div class="px-5 px-sm-0"><img class="img-fluid rounded" src="./assets/img/about_us_image.jpg" alt="team members" /></div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Basic features section-->
-        <section class="bg-light" id="about">
+        <section class="bg-white" id="why">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5">
@@ -220,7 +293,7 @@
             </div>
         </section>
         <!-- Call to action section-->
-        <section class="cta">
+        <section class="cta" id="cta">
             <div class="cta-content">
                 <div class="container px-5">
                     <h2 class="text-white display-1 lh-1 mb-4">
@@ -232,16 +305,66 @@
                 </div>
             </div>
         </section>
+        <!-- Quotes-->
+        <section bg="bg-light" id="testimonials">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col mb-5 mb-lg-0">
+                        <ul class="nav flex-column nav-pills" id="myTab" role="tablist">
+                            <li class="nav-item p-1" role="presentation">
+                                <div class="nav-testimonial active p-2 mb-1 border" id="splittech-tab" data-bs-toggle="tab" data-bs-target="#splittech" type="button" role="tab" aria-controls="splittech" aria-selected="true" style="width: 300px;">
+                                    <img src="assets/img/splittechcity.jpeg" class="rounded-circle" alt="split tech city logo" style="width: 40px; height: 40px">
+                                    <span class="ms-2">Split Tech City</span>
+                                </div>
+                            </li>
+                            <li class="nav-item p-1" role="presentation">
+                                <div class="nav-testimonial p-2 mb-1 border" id="jutarnji-tab" data-bs-toggle="tab" data-bs-target="#jutarnji" type="button" role="tab" aria-controls="jutarnji" aria-selected="false" style="width: 300px;">
+                                    <img src="assets/img/jutarnji.png" class="rounded-circle" alt="jutarnji logo" style="width: 40px; height: 40px">
+                                    <span class="ms-2">Jutarnji list</span>
+                                </div>
+                            </li>
+                            <li class="nav-item p-1" role="presentation">
+                                <div class="nav-testimonial p-2 mb-1 border" id="twentyFourHours-tab" data-bs-toggle="tab" data-bs-target="#twentyFourHours" type="button" role="tab" aria-controls="twentyFourHours" aria-selected="false" style="width: 300px;">
+                                    <img src="assets/img/24sata.png" class="rounded-circle" alt="24sata logo" style="width:40px; height:40px">
+                                    <span class="ms-2">24 sata</span>
+                                </div>
+                            </li>
+                            <li class="nav-item p-1" role="presentation">
+                                <div class="nav-testimonial p-2 mb-1 border" id="ict-tab" data-bs-toggle="tab" data-bs-target="#ict" type="button" role="tab" aria-controls="ict" aria-selected="false" style="width: 300px;">
+                                    <img src="assets/img/ict.jpeg" class="rounded-circle" alt="ict logo" style="width:40px; height:40px">
+                                    <span class="ms-2">ICT Županija</span>
+                                </div>
+                            </li>
+                            <li class="nav-item p-1" role="presentation">
+                                <div class="nav-testimonial p-2 mb-1 border" id="universitas-tab" data-bs-toggle="tab" data-bs-target="#universitas" type="button" role="tab" aria-controls="universitas" aria-selected="false" style="width: 300px;">
+                                    <img src="assets/img/universitas.jpeg" class="rounded-circle" alt="universitas logo" style="width:40px; height:40px">
+                                    <span class="ms-2">Universitas</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="tab-content" id="myTabContent" style="max-height: 300px; min-height: 300px;">
+                            <div class="tab-pane fade show active h5 fs-5 my-auto" id="splittech" role="tabpanel" aria-labelledby="splittech-tab">"These individuals are primarily driven and motivated by a higher vision or grander purpose and leverage the power of their position, their standing in the community, and the potential synergy and wealth-creation power of an enterprise as a vehicle or platform to advance their social goals."</div>
+                            <div class="tab-pane fade active h5 fs-5 my-auto" id="jutarnji" role="tabpanel" aria-labelledby="jutarnji-tab">"Transparentno doniranje: Očitajte DonatQR kod i donirajte upravo ono što je nekome potrebno"</div>
+                            <div class="tab-pane fade active h5 fs-5 my-auto" id="twentyFourHours" role="tabpanel" aria-labelledby="twentyFourHours-tab">"Za razliku od ostalih kampanja ovdje se ne radi o nekoj vrsti gerila marketinga već o humanitarnoj akciji prikupljanja Božićnih poklona djeci iz Dječjeg doma Maestral Split i podružnici Miljenko i Dobrila u Kaštel Lukšiću. "</div>
+                            <div class="tab-pane fade active h5 fs-5 my-auto" id="ict" role="tabpanel" aria-labelledby="ict-tab">"Nije teško😊 Na ulasku u dućan skenirate QR kod, kupite nešto s liste, a DonatQR se pobrine da dar dobiju oni kojima je doista potreban."</div>
+                            <div class="tab-pane fade active h5 fs-5 my-auto" id="universitas" role="tabpanel" aria-labelledby="universitas-tab">"U javnost su prvi put sa svojim zajedničkim projektom, odnosno web aplikacijom, izišli na blagdan svetog Nikole, i to u obliku humanitarne akcije. Ovom prvom akcijom, ekipa DonatQR odlučila je pomoći djeci iz Doma “Maestral”."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Footer-->
         <footer class="bg-black text-center py-5">
             <div class="container px-5">
                 <div class="text-white-50 small">
-                    <div class="mb-2">&copy; Your Website 2022. All Rights Reserved.</div>
-                    <a href="#!">Privacy</a>
+                    <div class="mb-2">&copy; DonatQR. All Rights Reserved.</div>
+                    <a href="https://www.facebook.com/donatqr" target="_blank" rel="noopener noreferrer">Facebook</a>
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">Terms</a>
+                    <a href="https://www.linkedin.com/company/74495147/" target="_blank" rel="noopener noreferrer">Linkedin</a>
                     <span class="mx-1">&middot;</span>
-                    <a href="#!">FAQ</a>
+                    <a href="https://www.instagram.com/donatqr/" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </div>
             </div>
         </footer>
