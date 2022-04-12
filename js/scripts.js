@@ -30,22 +30,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 
-  const cards = document.getElementsByClassName("card");
+  const screen = document.querySelector(".screen-app");
+  document.getElementById("organisation-tab").addEventListener("click", function(e) {
+    screen.classList.add("screen-organisation");
+    screen.classList.remove("screen-donor");
+  });
 
-  const cardTransformReset = () => {
-    for (const card of cards) {
-      card.style.transform = "scale(1, 1)";
-    }
-  };
+  document.getElementById("donor-tab").addEventListener("click", function(e) {
+    screen.classList.remove("screen-organisation");
+    screen.classList.add("screen-donor");
+  });
 
-  for (const card of cards) {
-    card.addEventListener("mouseover", () => {
-      cardTransformReset();
-      card.style.transform = "scale(1.05, 1.05)";
-    });
-
-    card.addEventListener("mouseleave", () => {
-      cardCleanup();
-    });
-  }
 });

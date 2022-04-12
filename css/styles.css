@@ -11757,9 +11757,50 @@ section {
   pointer-events: auto;
 }
 
+.screen > img {
+    width: 100%;
+    height: auto;
+}
+
 .device .button {
   position: absolute;
   cursor: pointer;
+}
+
+.feature-device-img--logo {
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.feature-device-img {
+    transition: .5s;
+}
+
+.img-opaque {
+    opacity: 0;
+}
+
+.card { 
+    transition: ease-out !important;
+    transition-duration: .2s !important;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.screen {
+    transition-duration: background .5s;
+}
+
+.screen-organisation {
+    transition: background-image 0.2s ease-in-out;
+    background: url("../assets/img/device-organization.png") repeat;
+}
+
+.screen-donor {
+    transition: background-image 0.2s ease-in-out;
+    background: url("../assets/img/device-donor.png") repeat;
 }
 
 .device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] {
@@ -11791,7 +11832,7 @@ section {
 section.cta {
   position: relative;
   padding: 15rem 0;
-  background-image: url("https://source.unsplash.com/5g41N3uRPf8/1500x800");
+  background-image: url("../assets/img/join-background.jpg");
   background-position: center;
   background-size: cover;
 }
