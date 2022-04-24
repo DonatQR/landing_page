@@ -86,9 +86,9 @@
 }
 
 @media (max-width: 872px) {
-    .img-container {
-        width: 100% !important;
-    }
+  .img-container {
+    width: 100% !important;
+  }
 }
 
 body {
@@ -3775,9 +3775,6 @@ fieldset:disabled .btn {
   .fade {
     transition: none;
   }
-}
-.fade:not(.show) {
-  opacity: 0;
 }
 
 .collapse:not(.show) {
@@ -11764,8 +11761,8 @@ section {
 }
 
 .screen > img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .device .button {
@@ -11774,39 +11771,38 @@ section {
 }
 
 .feature-device-img--logo {
-    margin-top: 100px;
-    padding: 10px;
+  margin-top: 100px;
+  padding: 10px;
 }
 
 .feature-device-img {
-    transition: .5s;
+  transition: 0.5s;
 }
 
 .img-opaque {
-    opacity: 0;
+  opacity: 0;
 }
 
-.card { 
-    transition: ease-out !important;
-    transition-duration: .2s !important;
+.card {
+  transition: ease-out !important;
+  transition-duration: 0.2s !important;
 }
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-
 .screen {
-    transition-duration: background .5s;
+  transition-duration: background 0.5s;
 }
 
 .screen-organisation {
-    transition: background-image 0.2s ease-in-out;
-    background: url("../assets/img/device-organization.png") repeat;
+  transition: background-image 0.2s ease-in-out;
+  background: url("../assets/img/device-organization.png") repeat;
 }
 
 .screen-donor {
-    transition: background-image 0.2s ease-in-out;
-    background: url("../assets/img/device-donor.png") repeat;
+  transition: background-image 0.2s ease-in-out;
+  background: url("../assets/img/device-donor.png") repeat;
 }
 
 .device[data-device="iPhoneX"][data-orientation="portrait"][data-color="black"] {
@@ -12138,4 +12134,8 @@ footer a:focus {
 .nav-fill .nav-item .nav-testimonial,
 .nav-justified .nav-item .nav-testimonial {
   width: 100%;
+}
+
+.testimonialHide {
+  display: none;
 }

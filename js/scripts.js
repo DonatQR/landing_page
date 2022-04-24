@@ -31,14 +31,42 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   const screen = document.querySelector(".screen-app");
-  document.getElementById("organisation-tab").addEventListener("click", function(e) {
-    screen.classList.add("screen-organisation");
-    screen.classList.remove("screen-donor");
-  });
+  document
+    .getElementById("organisation-tab")
+    .addEventListener("click", function (e) {
+      screen.classList.add("screen-organisation");
+      screen.classList.remove("screen-donor");
+    });
 
-  document.getElementById("donor-tab").addEventListener("click", function(e) {
+  document.getElementById("donor-tab").addEventListener("click", function (e) {
     screen.classList.remove("screen-organisation");
     screen.classList.add("screen-donor");
   });
 
+  const testimonialClick = (e) => {
+    const testimonialTexts = Array.from(
+      document.getElementsByClassName("testimonialText")
+    );
+    const selectedButton = document.querySelector(".testimonial.active");
+    selectedButton.classList.remove("active");
+    e.target.classList.add("active");
+
+    const shownTestimonial = document.querySelector(
+      `#${selectedButton.id.split("-")[0]}`
+    );
+    const targetTestimonial = document.querySelector(
+      `#${e.target.id.split("-")[0]}`
+    );
+
+    shownTestimonial.classList.add("testimonialHide");
+    targetTestimonial.classList.remove("testimonialHide");
+  };
+
+  const testimonialButtons = Array.from(
+    document.getElementsByClassName("testimonial")
+  );
+
+  testimonialButtons.forEach((button) =>
+    button.addEventListener("click", (e) => testimonialClick(e))
+  );
 });
