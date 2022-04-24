@@ -85,6 +85,12 @@
   }
 }
 
+@media (max-width: 872px) {
+    .img-container {
+        width: 100% !important;
+    }
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -11832,7 +11838,7 @@ section {
 section.cta {
   position: relative;
   padding: 15rem 0;
-  background-image: url("../assets/img/join-background.jpg");
+  background-image: url("../assets/img/scaning_code.jpg");
   background-position: center;
   background-size: cover;
 }
