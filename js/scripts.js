@@ -1,8 +1,8 @@
 /*!
- * Start Bootstrap - New Age v6.0.6 (https://startbootstrap.com/theme/new-age)
- * Copyright 2013-2022 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
- */
+* Start Bootstrap - New Age v6.0.6 (https://startbootstrap.com/theme/new-age)
+* Copyright 2013-2022 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
+*/
 //
 // Scripts
 //
@@ -44,18 +44,24 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   const testimonialClick = (e) => {
+    let target = e.target;
+
+    if (!e.target.classList.contains("testimonial")) {
+      target = e.target.parentElement;
+    }
+
     const testimonialTexts = Array.from(
       document.getElementsByClassName("testimonialText")
     );
     const selectedButton = document.querySelector(".testimonial.active");
     selectedButton.classList.remove("active");
-    e.target.classList.add("active");
+    target.classList.add("active");
 
     const shownTestimonial = document.querySelector(
       `#${selectedButton.id.split("-")[0]}`
     );
     const targetTestimonial = document.querySelector(
-      `#${e.target.id.split("-")[0]}`
+      `#${target.id.split("-")[0]}`
     );
 
     shownTestimonial.classList.add("testimonialHide");
@@ -66,7 +72,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
     document.getElementsByClassName("testimonial")
   );
 
-  testimonialButtons.forEach((button) =>
+  testimonialButtons.forEach((button) => {
     button.addEventListener("click", (e) => testimonialClick(e))
+  }
   );
 });
