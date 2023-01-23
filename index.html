@@ -45,7 +45,7 @@
             <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
             <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About us</a></li>
             <li class="nav-item"><a class="nav-link me-lg-3" href="#why">Why?</a></li>
-            <li class="nav-item"><a class="nav-link me-lg-3" href="#cta">Join us</a></li>
+            <li class="nav-item"><a class="nav-link me-lg-3" href="#cta">Contact us</a></li>
             <li class="nav-item"><a class="nav-link me-lg-3" href="#testimonials">Testimonials</a></li>
           </ul>
         </div>
@@ -87,6 +87,46 @@
         </div>
       </div>
     </header>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form action="mailto:donatqr@ensoco.co.uk" method="POST" enctype="multipart/form-data" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Send us an e-mail</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label class="form-label" for="name">Name:</label>
+                <input placeholder="John Doe" class="form-control" type="text" name="name" id="name" />
+            </div>
+            <br />
+            <div>
+              <label class="form-label" for="email">Email:</label>
+                <input placeholder="something@mail.com" class="form-control" type="text" name="email" id="email" />
+            </div>
+            <br />
+            <div>
+              <label class="form-label">Message:</label>
+              <br />
+              <textarea
+                class="form-control"
+                name="comments"
+                rows="7"
+                cols="35">
+              </textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <!-- Quote/testimonial aside-->
     <aside class="text-center" style="background-color: #0475C9;">
       <div class="container px-5">
@@ -313,7 +353,13 @@
             <br />
             Start donating.
           </h2>
-          <a class="btn btn-outline-light py-3 px-4 rounded-pill" target="_blank">Join us</a>
+          <button
+            class="btn btn-outline-light py-3 px-4 rounded-pill"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Contact us
+          </button>
         </div>
       </div>
     </section>
@@ -323,35 +369,25 @@
         <div class="row gx-5 align-items-center justify-content-center">
           <div class="col mb-5 mb-lg-0">
             <ul class="nav flex-column nav-pills">
-              <li class="nav-item p-1">
-                <div class="nav-testimonial active p-2 mb-1 border testimonial" id="splittech-tab" type="button" style="width: 300px;">
+              <li id="splittech-tab" class="nav-item p-1 nav-testimonial active p-2 mb-1 border testimonial">
                   <img src="assets/img/splittechcity.jpeg" class="rounded-circle" alt="split tech city logo" style="width: 40px; height: 40px">
                   <span class="ms-2">Split Tech City</span>
-                </div>
               </li>
-              <li class="nav-item p-1">
-                <div class="nav-testimonial p-2 mb-1 border testimonial" id="jutarnji-tab" type="button" style="width: 300px;">
+              <li  id="jutarnji-tab" class="nav-item p-1 nav-testimonial p-2 mb-1 border testimonial">
                   <img src="assets/img/jutarnji.png" class="rounded-circle" alt="jutarnji logo" style="width: 40px; height: 40px">
                   <span class="ms-2">Jutarnji list</span>
-                </div>
               </li>
-              <li class="nav-item p-1">
-                <div class="nav-testimonial p-2 mb-1 border testimonial" id="twentyFourHours-tab" type="button" style="width: 300px;">
+              <li id="twentyFourHours-tab" class="nav-item p-1 nav-testimonial p-2 mb-1 border testimonial">
                   <img src="assets/img/24sata.png" class="rounded-circle" alt="24sata logo" style="width:40px; height:40px">
                   <span class="ms-2">24 sata</span>
-                </div>
               </li>
-              <li class="nav-item p-1">
-                <div class="nav-testimonial p-2 mb-1 border testimonial" id="ict-tab" type="button" style="width: 300px;">
+              <li id="ict-tab" class="nav-item p-1 nav-testimonial p-2 mb-1 border testimonial">
                   <img src="assets/img/ict.jpeg" class="rounded-circle" alt="ict logo" style="width:40px; height:40px">
                   <span class="ms-2">Digitalna Dalmacija</span>
-                </div>
               </li>
-              <li class="nav-item p-1">
-                <div class="nav-testimonial p-2 mb-1 border testimonial" id="universitas-tab" type="button" style="width: 300px;">
+              <li id="universitas-tab" class="nav-item p-1 nav-testimonial p-2 mb-1 border testimonial">
                   <img src="assets/img/universitas.jpeg" class="rounded-circle" alt="universitas logo" style="width:40px; height:40px">
                   <span class="ms-2">Universitas</span>
-                </div>
               </li>
             </ul>
           </div>
