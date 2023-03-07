@@ -1,11 +1,13 @@
 /*!
-* Start Bootstrap - New Age v6.0.6 (https://startbootstrap.com/theme/new-age)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
-*/
+ * Start Bootstrap - New Age v6.0.6 (https://startbootstrap.com/theme/new-age)
+ * Copyright 2013-2022 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
+ */
 //
 // Scripts
 //
+
+const CONTACT_EMAIL = "donatqr@ensoco.co.uk ";
 
 window.addEventListener("DOMContentLoaded", (event) => {
   // Activate Bootstrap scrollspy on the main nav element
@@ -43,6 +45,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
     screen.classList.add("screen-donor");
   });
 
+  const contactUsButton = document.getElementById("contact-us-button");
+
+  contactUsButton.addEventListener("click", function (e) {
+    document.location = `mailto: ${CONTACT_EMAIL}`;
+  });
+
+  contactUsButton.addEventListener("contextmenu", function (e) {
+    console.log("yeah");
+    navigator.clipboard.writeText(CONTACT_EMAIL);
+  });
+
   const testimonialClick = (e) => {
     let target = e.target;
 
@@ -73,7 +86,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   );
 
   testimonialButtons.forEach((button) => {
-    button.addEventListener("click", (e) => testimonialClick(e))
-  }
-  );
+    button.addEventListener("click", (e) => testimonialClick(e));
+  });
 });
