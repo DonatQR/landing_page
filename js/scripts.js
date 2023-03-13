@@ -7,8 +7,6 @@
 // Scripts
 //
 
-const CONTACT_EMAIL = "donatqr@ensoco.co.uk ";
-
 window.addEventListener("DOMContentLoaded", (event) => {
   // Activate Bootstrap scrollspy on the main nav element
   const mainNav = document.body.querySelector("#mainNav");
@@ -43,17 +41,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   document.getElementById("donor-tab").addEventListener("click", function (e) {
     screen.classList.remove("screen-organisation");
     screen.classList.add("screen-donor");
-  });
-
-  const contactUsButton = document.getElementById("contact-us-button");
-
-  contactUsButton.addEventListener("click", function (e) {
-    document.location = `mailto: ${CONTACT_EMAIL}`;
-  });
-
-  contactUsButton.addEventListener("contextmenu", function (e) {
-    console.log("yeah");
-    navigator.clipboard.writeText(CONTACT_EMAIL);
   });
 
   const testimonialClick = (e) => {

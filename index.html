@@ -87,46 +87,6 @@
         </div>
       </div>
     </header>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <form action="mailto:donatqr@ensoco.co.uk" method="POST" enctype="multipart/form-data" class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Send us an e-mail</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div>
-              <label class="form-label" for="name">Name:</label>
-                <input placeholder="John Doe" class="form-control" type="text" name="name" id="name" />
-            </div>
-            <br />
-            <div>
-              <label class="form-label" for="email">Email:</label>
-                <input placeholder="something@mail.com" class="form-control" type="text" name="email" id="email" />
-            </div>
-            <br />
-            <div>
-              <label class="form-label">Message:</label>
-              <br />
-              <textarea
-                class="form-control"
-                name="comments"
-                rows="7"
-                cols="35">
-              </textarea>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" data-bs-dismiss="modal" class="btn btn-primary">Send</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
     <!-- Quote/testimonial aside-->
     <aside class="text-center" style="background-color: #0475C9;">
       <div class="container px-5">
@@ -353,12 +313,14 @@
             <br />
             Start donating.
           </h2>
-          <button
-            class="btn btn-outline-light py-3 px-4 rounded-pill"
-            id="contact-us-button"
-          >
-            Contact us
-          </button>
+          <a target="_blank" href="mailto:donatqr@ensoco.co.uk ">
+            <button
+              class="btn btn-outline-light py-3 px-4 rounded-pill"
+              id="contact-us-button"
+            >
+              Contact us
+            </button>
+        </a>
         </div>
       </div>
     </section>
